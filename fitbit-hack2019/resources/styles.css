@@ -10,5 +10,9 @@ text{
 }
 
 .emergency-button {
-  height: 50%;
+  height: 60%;
+}
+
+.cancel-button {
+  height: 40%;
 }

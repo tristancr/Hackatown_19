@@ -3,7 +3,7 @@
   <use id="container" href="#panoramaview">
     
     <use id="item1" href="#panoramaview-item">
-      <section x="50" y="50" width="100%" height="100%">
+      <section x="50" y="75" width="100%" height="100%">
         <text id="dayLabel" y="10"></text>
         <text id="dateLabel" x="70" y="10"></text>
         <text id="myClock" x="115" y="90"
@@ -13,7 +13,7 @@
     </use>
     
     <use id="item2" href="#panoramaview-item">
-      <section width="100%" height="100%" >
+      <section width="100%" height="100%" class="emergency-button" y="50">
         <use href="#square-button-negative" id="btn-no" class="emergency-button">
           <set href="#text" attributeName="text-buffer" to="Call For Help!" />
         </use>
@@ -22,7 +22,7 @@
     
     <use id="item3" href="#panoramaview-item">
       <section>
-        <use href="#square-button-positive" y="$"id="btn-yes">
+        <use href="#square-button-positive" y="75" id="btn-yes" class="cancel-button">
         <set href="#text" attributeName="text-buffer" to="Cancel Call" />
         </use>
       </section>
@@ -36,11 +36,5 @@
       <use href="#pagination-highlight-dot" />
     </use>
   </use>
-  
-  
-  
-  
-  
-  
   
 </svg>
