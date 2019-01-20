@@ -1,3 +1,46 @@
+
 <svg>
-  <rect id="background" />
+  <use id="container" href="#panoramaview">
+    
+    <use id="item1" href="#panoramaview-item">
+      <section x="50" y="50" width="100%" height="100%">
+        <text id="dayLabel" y="10"></text>
+        <text id="dateLabel" x="70" y="10"></text>
+        <text id="myClock" x="115" y="90"
+          font-size="64" font-family="System-Regular"
+          text-anchor="middle" text-length="20">00:00:00</text>
+      </section>
+    </use>
+    
+    <use id="item2" href="#panoramaview-item">
+      <section width="100%" height="100%" >
+        <use href="#square-button-negative" id="btn-no" class="emergency-button">
+          <set href="#text" attributeName="text-buffer" to="Call For Help!" />
+        </use>
+      </section>
+    </use>
+    
+    <use id="item3" href="#panoramaview-item">
+      <section>
+        <use href="#square-button-positive" y="$"id="btn-yes">
+        <set href="#text" attributeName="text-buffer" to="Cancel Call" />
+        </use>
+      </section>
+    </use>
+
+<!-- Have enough pagination dots for your slides (extras are hidden) -->
+    <use id="pagination-dots" href="#pagination-widget" y="8">
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-dot" />
+      <use href="#pagination-highlight-dot" />
+    </use>
+  </use>
+  
+  
+  
+  
+  
+  
+  
 </svg>
